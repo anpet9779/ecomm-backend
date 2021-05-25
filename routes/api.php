@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('register','Admin\AuthController@register');
+Route::post('register','Admin\AuthController@Register');
+Route::post('login','Admin\AuthController@Login');
 
 
 Route::group(['middleware'=>['auth:sanctum']], function () {
